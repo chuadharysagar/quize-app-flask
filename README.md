@@ -1,7 +1,7 @@
-# Python Quiz Application 🎯
+# Quiz Application With Flask 🎯
 
 <div align="center">
-A desktop quiz application built with wxPython that tests knowledge across multiple programming topics including wxPython, Node.js, Data Structures & Algorithms (DSA), and Aptitude questions.
+A quiz application built with Flask and JavaScript that delivers questions across various categories, including Geography, Programming, Web Development, Mathematics, and more.
 </div>
 
 ## ✨ Features
@@ -10,18 +10,18 @@ A desktop quiz application built with wxPython that tests knowledge across multi
   <tr>
     <td>
       <ul>
-        <li>10 Multiple choice questions across categories</li>
-        <li>Real-time score tracking</li>
-        <li>Visual feedback for answers</li>
-        <li>Navigation between questions</li>
+        <li>Multiple choice questions categorized by topic</li>
+        <li>Real-time score tracking and display</li>
+        <li>Visual feedback for correct and incorrect answers</li>
+        <li>Navigation between questions with next and previous buttons</li>
       </ul>
     </td>
     <td>
       <ul>
-        <li>Final score display</li>
-        <li>Performance feedback</li>
-        <li>Retry option</li>
-        <li>Category indicators</li>
+        <li>Final score display with performance-based quotes</li>
+        <li>Retry option to restart the quiz</li>
+        <li>Category indicators for each question</li>
+        <li>Responsive and user-friendly UI</li>
       </ul>
     </td>
   </tr>
@@ -32,61 +32,64 @@ A desktop quiz application built with wxPython that tests knowledge across multi
 Before running this application, ensure you have:
 
 - Python 3.x installed
-- wxPython library installed
+- Flask and Flask-CORS libraries installed
 
 ```bash
-# Install wxPython using pip
-pip install wxPython
+# Install Flask and Flask-CORS using pip
+pip install Flask
+pip install Flask Flask-CORS
 ```
+
 
 ## 💻 Installation
 
 1. Clone this repository:
 ```bash
-git clone https://github.com/chuadharysagar/quize-app-python.git
+git clone https://github.com/chuadharysagar/quiz-app-flask.git
 ```
 
 2. Navigate to the project directory:
 ```bash
-cd quize-app-python
+cd quize-app-flask
 ```
 
 3. Run the application:
 ```bash
-python quizeapp.py
+python3 app.py
 ```
+4. Open index.html in your browser to start the quiz.
 
 ## 📖 Quiz Categories
 
-<details>
-<summary><b>wxPython (3 questions)</b></summary>
-
-- Event loops
-- Widget hierarchy
-- Layout management
+<details> 
+  <summary><b>Geography</b></summary>
+  Capitals<br>
+  Continents<br>
+  Physical geography
 </details>
 
-<details>
-<summary><b>Node.js (3 questions)</b></summary>
+<details> 
+  <summary><b>Programming</b></summary>
+  Data types<br>
+  Syntax<br>
+  Language history
+</details> 
 
-- Web server creation
-- Package management
-- Frameworks
+<details> 
+  <summary><b>Web Development</b></summary>
+  HTML<br>
+  CSS<br>
+  JavaScript basics
+</details> 
+
+<details> 
+  <summary><b>Mathematics</b></summary>
+  Arithmetic<br>
+  Algebra<br>
+  Problem-solving
 </details>
 
-<details>
-<summary><b>Data Structures & Algorithms (2 questions)</b></summary>
 
-- Time complexity
-- Basic data structures
-</details>
-
-<details>
-<summary><b>Aptitude (2 questions)</b></summary>
-
-- Mathematical reasoning
-- Problem-solving
-</details>
 
 ## 🎯 Features in Detail
 
@@ -116,13 +119,13 @@ python quizeapp.py
 <div>
 
 ### Main Interface
-<img src="https://github.com/chuadharysagar/quize-app-python/blob/main/1-auize.png" width="550" height="400" alt="Description">
+<img src="https://github.com/chuadharysagar/quize-app-python/blob/main/falsk1.png" width="550" height="400" alt="Description">
 
 ### Answer Selection
-<img src="https://github.com/chuadharysagar/quize-app-python/blob/main/2-quize.png" width="550" height="400" alt="Description">
+<img src="https://github.com/chuadharysagar/quize-app-python/blob/main/flask2.png" width="550" height="400" alt="Description">
 
 ### Final Score Dialog
-<img src="https://github.com/chuadharysagar/quize-app-python/blob/main/3last.png" width="550" height="400" alt="Description">
+<img src="https://github.com/chuadharysagar/quize-app-python/blob/main/flask3.png" width="550" height="400" alt="Description">
 
 </div>
 
@@ -130,10 +133,10 @@ python quizeapp.py
 
 ```mermaid
 graph LR
-    A[Start App] --> B[Answer Questions]
+    A[Start Quiz] --> B[Display Question]
     B --> C[Navigate Questions]
     C --> D[Complete Quiz]
-    D --> E[View Score]
+    D --> E[Display Score and Feedback]
     E --> F{Choose Option}
     F --> G[Try Again]
     F --> H[Quit]
